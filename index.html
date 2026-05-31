@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MiA</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#555; --accent:#3a6ea5; --bg:#fff; --card:#f6f8fa; --border:#e1e4e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6e6e6; --muted:#a0a0a0; --accent:#6fa8dc; --bg:#0d1117; --card:#161b22; --border:#30363d; }
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.6; color: var(--fg); background: var(--bg); max-width: 560px; margin: 0 auto; padding: 3rem 1.4rem; text-align: center; }
+  h1 { font-size: 1.6rem; }
+  p { color: var(--muted); }
+  ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-top: 1.6rem; }
+  a.lang { display: inline-block; padding: 0.6rem 1rem; border: 1px solid var(--border); border-radius: 8px;
+           text-decoration: none; color: var(--accent); background: var(--card); min-width: 110px; }
+  a.lang:hover { border-color: var(--accent); }
+</style>
+<script>
+  // Redirige vers la langue du navigateur si disponible, sinon laisse le choix.
+  (function () {
+    var supported = ["fr", "en", "de", "es", "it", "pt"];
+    var lang = (navigator.language || navigator.userLanguage || "en").slice(0, 2).toLowerCase();
+    if (supported.indexOf(lang) !== -1) {
+      // Évite une boucle si on a déjà choisi manuellement (paramètre ?stay).
+      if (location.search.indexOf("stay") === -1) {
+        location.replace(lang + ".html");
+      }
+    }
+  })();
+</script>
+</head>
+<body>
+  <h1>MiA — Privacy Policy</h1>
+  <p>Choose your language · Choisissez votre langue · Wählen Sie Ihre Sprache</p>
+  <ul>
+    <li><a class="lang" href="fr.html">Français</a></li>
+    <li><a class="lang" href="en.html">English</a></li>
+    <li><a class="lang" href="de.html">Deutsch</a></li>
+    <li><a class="lang" href="es.html">Español</a></li>
+    <li><a class="lang" href="it.html">Italiano</a></li>
+    <li><a class="lang" href="pt.html">Português</a></li>
+  </ul>
+</body>
+</html>

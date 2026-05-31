@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — MiA</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#555; --accent:#3a6ea5; --bg:#fff; --card:#f6f8fa; --border:#e1e4e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6e6e6; --muted:#a0a0a0; --accent:#6fa8dc; --bg:#0d1117; --card:#161b22; --border:#30363d; }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.65; color: var(--fg); background: var(--bg); max-width: 820px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+  h1 { font-size: 1.9rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.3rem; margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .lead { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.6rem; border: 1px solid var(--border); }
+  th { background: var(--card); }
+  code { background: var(--card); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.88em; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+  .pill { display:inline-block; background:var(--card); border:1px solid var(--border); border-radius:999px; padding:0.1rem 0.6rem; font-size:0.8rem; color:var(--muted); }
+  .langs { font-size:0.85rem; margin-bottom:1.2rem; }
+  .langs a { margin:0 0.15rem; text-decoration:none; }
+  .langs .cur { font-weight:700; color:var(--fg); }
+</style>
+</head>
+<body>
+
+<nav class="langs"><a href="fr.html">FR</a> · <a href="en.html">EN</a> · <a href="de.html">DE</a> · <a href="es.html">ES</a> · <a href="it.html">IT</a> · <a class="cur" href="pt.html">PT</a></nav>
+
+<h1>Política de Privacidade — MiA</h1>
+<p class="meta">Última atualização: 31 de maio de 2026 · Aplicação Android «MiA»</p>
+
+<div class="lead">
+  <strong>Em resumo:</strong> a MiA funciona <strong>sem qualquer servidor que nos pertença</strong>. As suas conversas,
+  definições e chaves de API permanecem <strong>no seu dispositivo</strong>. Quando utiliza a inteligência artificial, a
+  síntese de voz ou o reconhecimento de voz, os seus dados são enviados <strong>diretamente do seu telefone para os
+  serviços de terceiros que escolheu</strong>, utilizando <strong>as suas próprias chaves de API</strong>. O editor da
+  MiA não recebe, não armazena nem vende <strong>nenhum</strong> destes dados. A aplicação não integra <strong>qualquer
+  ferramenta de análise ou de rastreio</strong>.
+</div>
+
+<h2>1. Quem é responsável pelo tratamento</h2>
+<p>
+  A aplicação <strong>MiA</strong> é editada por <strong>Michael Stehly</strong> (programador independente).
+  Para qualquer questão relativa a esta política ou aos seus dados, pode escrever para:
+  <a href="mailto:Lylm83@laposte.net">Lylm83@laposte.net</a>.
+</p>
+<p>
+  A MiA é uma aplicação «cliente»: não dispõe de qualquer servidor operado pelo editor. Para os tratamentos realizados
+  pelos serviços de terceiros (modelos de IA, síntese de voz), <strong>atua como utilizador das suas próprias
+  contas</strong> junto desses fornecedores, através das suas chaves de API pessoais.
+</p>
+
+<h2>2. Princípio: nenhuma recolha por parte do editor</h2>
+<ul>
+  <li>A MiA <strong>não envia qualquer dado ao editor</strong> e não aloja qualquer conta de utilizador nos nossos servidores.</li>
+  <li>Não está integrada qualquer ferramenta de <strong>análise de audiência</strong>, de <strong>relatório de
+      falhas</strong> nem de <strong>rastreio publicitário de terceiros</strong>, para além do que é descrito na secção
+      «Publicidade» abaixo.</li>
+  <li>Os seus dados são armazenados <strong>localmente</strong> no dispositivo e são <strong>removidos juntamente com a
+      aplicação</strong> quando a desinstala.</li>
+</ul>
+
+<h2>3. Dados tratados e finalidades</h2>
+<table>
+  <thead>
+    <tr><th>Dado</th><th>Para quê</th><th>Para onde vai</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Conteúdo das conversas (o texto que escreve e as respostas geradas)</td>
+      <td>Permitir o diálogo com o assistente, as lições, o tradutor e o audioguia</td>
+      <td>Armazenado localmente; enviado ao <strong>fornecedor de IA que selecionou</strong> para produzir a resposta</td>
+    </tr>
+    <tr>
+      <td>Entrada de voz (microfone)</td>
+      <td>Ditado por voz das suas mensagens</td>
+      <td>Tratada pelo <strong>serviço de reconhecimento de voz do seu dispositivo</strong> (Android / Google), que a
+          converte em texto. A MiA não conserva a gravação de áudio.</td>
+    </tr>
+    <tr>
+      <td>Texto a ler em voz alta</td>
+      <td>Síntese de voz das respostas</td>
+      <td>Enviado ao serviço de síntese de voz <strong>ElevenLabs</strong> (ou ao motor do dispositivo), com a sua chave de API</td>
+    </tr>
+    <tr>
+      <td>Fotos (modo Audioguia)</td>
+      <td>Descrever ou comentar uma imagem que tira</td>
+      <td>Tiradas através da câmara do sistema, armazenadas localmente e depois enviadas ao <strong>fornecedor de IA
+          selecionado</strong> para análise</td>
+    </tr>
+    <tr>
+      <td>Documentos PDF anexados</td>
+      <td>Permitir que a IA responda sobre um documento</td>
+      <td>O texto extraído é enviado ao fornecedor de IA selecionado</td>
+    </tr>
+    <tr>
+      <td>Localização aproximada (cidade) — <span class="pill">opcional</span></td>
+      <td>Dar contexto geográfico às respostas (apenas se ativar a opção no Perfil)</td>
+      <td>Localização <strong>aproximada</strong> (rede, sem GPS preciso) adicionada ao contexto enviado ao fornecedor de
+          IA. Desativada por predefinição.</td>
+    </tr>
+    <tr>
+      <td>Chaves de API</td>
+      <td>Ligá-lo aos serviços de IA / de voz da sua escolha</td>
+      <td>Armazenadas <strong>apenas no dispositivo</strong>. Nunca transmitidas ao editor. Enviadas apenas ao serviço
+          em causa para o autenticar.</td>
+    </tr>
+    <tr>
+      <td>Definições, personalidades, histórico de conversas</td>
+      <td>Fazer funcionar a aplicação e conservar as suas preferências</td>
+      <td>Base de dados <strong>local</strong> no dispositivo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>4. Permissões Android</h2>
+<ul>
+  <li><strong>Internet / estado da rede</strong> — comunicar com os serviços de IA e de voz, e detetar a perda de ligação.</li>
+  <li><strong>Microfone (gravação de áudio)</strong> — apenas quando inicia o ditado por voz.</li>
+  <li><strong>Localização aproximada</strong> — apenas se ativar a opção de contexto geográfico; recusável a qualquer momento.</li>
+  <li><strong>Câmara</strong> — gerida através da aplicação de câmara do sistema, para o modo Audioguia.</li>
+  <li><strong>Manter o ecrã ativo (wake lock / sensor de proximidade)</strong> — desligar o ecrã tátil quando aproxima o
+      telefone do ouvido durante a reprodução de voz.</li>
+</ul>
+
+<h2>5. Destinatários terceiros</h2>
+<p>
+  Consoante as funções que utiliza e o fornecedor que escolhe, os seus dados podem ser transmitidos diretamente do seu
+  dispositivo para os seguintes serviços, sujeitos às respetivas políticas de privacidade:
+</p>
+<ul>
+  <li><strong>Fornecedores de modelos de IA</strong> (à sua escolha): Anthropic (Claude), Google (Gemini), OpenAI,
+      Mistral AI, xAI (Grok), OpenRouter.</li>
+  <li><strong>Síntese de voz</strong>: ElevenLabs.</li>
+  <li><strong>Reconhecimento de voz e tipos de letra</strong>: serviços Google presentes no dispositivo
+      (Android / Google Play Services).</li>
+</ul>
+<p>
+  Convidamo-lo a consultar a política de privacidade de cada fornecedor que ativar. A MiA limita-se a encaminhar os seus
+  pedidos para esses serviços em seu nome.
+</p>
+
+<h2>6. Publicidade</h2>
+<p>
+  <span class="pill">Se ativada nesta versão</span>
+  A aplicação pode apresentar um banner publicitário fornecido pela <strong>Google AdMob</strong>. Para esse efeito, a
+  AdMob pode tratar um <strong>identificador de publicidade</strong> e dados técnicos limitados para apresentar anúncios.
+  O tratamento efetuado pela Google rege-se pela
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidade da Google</a>.
+</p>
+<p>
+  Pode <strong>remover a publicidade de forma permanente</strong> através de uma compra única «sem anúncios» proposta na
+  aplicação. A publicidade é igualmente ocultada durante as trocas por voz para não perturbar a utilização em modo mãos-livres.
+</p>
+
+<h2>7. Conservação e eliminação</h2>
+<p>
+  Todos os dados da aplicação (conversas, definições, chaves de API, fotos importadas) são conservados
+  <strong>localmente</strong> no seu dispositivo durante o tempo que desejar. Pode:
+</p>
+<ul>
+  <li>eliminar uma conversa ou um elemento diretamente na aplicação;</li>
+  <li>apagar os dados da aplicação a partir das definições do Android;</li>
+  <li>desinstalar a aplicação, o que remove todos os dados locais.</li>
+</ul>
+<p>
+  Os dados já transmitidos a um fornecedor terceiro regem-se pela política de conservação desse fornecedor; exerça os
+  seus direitos diretamente junto dele.
+</p>
+
+<h2>8. Segurança</h2>
+<p>
+  As trocas de rede com os serviços de terceiros utilizam ligações encriptadas (HTTPS). As suas chaves de API e os seus
+  dados permanecem confinados ao armazenamento privado da aplicação no dispositivo. Tal como em qualquer armazenamento
+  local, a sua proteção depende também do bloqueio e da segurança do seu dispositivo.
+</p>
+
+<h2>9. Crianças</h2>
+<p>
+  A MiA não se destina especificamente a crianças e não recolhe conscientemente dados pessoais de crianças. Se a aplicação
+  for utilizada por um menor, tal deve ser feito sob a responsabilidade e supervisão de um pai, mãe ou tutor,
+  nomeadamente porque as respostas são geradas por inteligências artificiais de terceiros.
+</p>
+
+<h2>10. Os seus direitos (RGPD)</h2>
+<p>
+  Como o editor não recolhe nem armazena os seus dados, mantém o controlo direto das suas informações: pode consultá-las,
+  modificá-las e apagá-las a qualquer momento a partir da aplicação ou desinstalando-a. Para os dados tratados pelos
+  fornecedores terceiros, dirija os seus pedidos de acesso, retificação ou eliminação diretamente a cada um deles. Para
+  qualquer questão, contacte <a href="mailto:Lylm83@laposte.net">Lylm83@laposte.net</a>. Pode também apresentar uma
+  reclamação junto da sua autoridade de proteção de dados (em Portugal, a CNPD).
+</p>
+
+<h2>11. Alterações</h2>
+<p>
+  Esta política pode ser atualizada para refletir a evolução da aplicação ou da regulamentação. A data da última
+  atualização figura no topo da página. As alterações importantes serão indicadas na aplicação ou na ficha da loja.
+</p>
+
+<footer>
+  MiA — Política de Privacidade · Contacto: <a href="mailto:Lylm83@laposte.net">Lylm83@laposte.net</a><br>
+  Disponível em: Français, English, Deutsch, Español, Italiano, Português.
+</footer>
+
+</body>
+</html>
