@@ -60,6 +60,7 @@
 <tr><td><strong>Cuenta</strong>: identificador de cuenta, dirección de correo y nombre asociados a su cuenta de Google</td><td>Identificarle, vincular su suscripción y sus créditos a su cuenta</td><td>Servidor del editor (Firebase Authentication)</td></tr>
 <tr><td><strong>Suscripción y compras</strong>: plan, fecha de vencimiento, créditos restantes, identificadores de pedido y tokens de compra de Google Play</td><td>Darle acceso al servicio, abonar sus recargas, tramitar un reembolso. El pago lo realiza Google Play: el editor <strong>nunca</strong> recibe los datos de su tarjeta.</td><td>Servidor del editor; Google Play</td></tr>
 <tr><td><strong>Consumo</strong>: fecha, servicio y modelo utilizados, número de tokens o de caracteres, coste</td><td>Descontar de su suscripción y de sus créditos, aplicar los límites, llevar la contabilidad. <strong>El contenido de sus peticiones no figura en él.</strong></td><td>Servidor del editor</td></tr>
+<tr><td><strong>Mensajes al editor</strong>: denuncia de un contenido, petición de una función, aviso de un error, petición de ayuda: el texto que usted escribe, el motivo elegido, la respuesta de la inteligencia artificial si decide adjuntarla, el idioma y la versión de la aplicación, su identificador de cuenta</td><td>Tratar su denuncia o su petición, corregir la aplicación, responderle</td><td>Buzón del editor (Gmail, Google)</td></tr>
 <tr><td><strong>Contenido de sus peticiones</strong>: lo que dice o escribe, fotos enviadas a la audioguía, documentos adjuntos y el historial reciente necesario para la conversación</td><td>Obtener la respuesta de la inteligencia artificial</td><td>Transmitido por el servidor del editor al servicio de IA, <strong>sin conservarse en él</strong>; el historial se guarda en su teléfono</td></tr>
 <tr><td><strong>Texto de las respuestas</strong></td><td>Hacer que se lea en voz alta</td><td>Transmitido al servicio de síntesis de voz (o leído por la síntesis de su teléfono), sin que el servidor del editor lo conserve</td></tr>
 <tr><td><strong>Su voz</strong> (micrófono)</td><td>Convertir su habla en texto</td><td>Tratada por el servicio de reconocimiento de voz de su teléfono (Google). MiA no conserva ninguna grabación de su voz.</td></tr>
@@ -107,6 +108,7 @@
   <li><strong>En su teléfono</strong> (historial, perfil, ajustes): hasta que los elimine en la aplicación o la desinstale;</li>
   <li><strong>Cuenta, suscripción y créditos</strong>: durante su suscripción; los créditos comprados siguen siendo utilizables seis meses después del fin de la suscripción, y después se pierden;</li>
   <li><strong>Consumo y compras</strong>: durante la relación, y después el tiempo que exijan las obligaciones contables y fiscales;</li>
+  <li><strong>Mensajes al editor</strong>: hasta que se traten, y un año como máximo;</li>
   <li><strong>Registros técnicos</strong> del alojamiento: unas semanas.</li>
 </ul>
 
