@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MiA — retour d'OpenRouter</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem 1.25rem; background: #0f1115; color: #e8e8e8; }
+  main { max-width: 32rem; margin: 0 auto; text-align: center; }
+  a.btn { display: inline-block; margin-top: 1.5rem; padding: .9rem 1.4rem; border-radius: 12px; background: #4f8cff; color: #fff; text-decoration: none; font-weight: 600; }
+  p.small { color: #9aa0a6; font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <!-- ⭐ 18/10/2026 — La page de retour de la connexion OpenRouter (OAuth PKCE) de l'app MiA, mode API.
+       OpenRouter renvoie ici avec ?code=…&state=… ; la page rouvre l'app par mia://openrouter?code=…&state=…
+       (le bouton reste si le navigateur ne suit pas la redirection automatique). Aucune donnée n'est gardée ici. -->
+  <h1>Retour dans MiA</h1>
+  <p id="texte">Connexion à OpenRouter réussie. Retour dans l’application…</p>
+  <a id="bouton" class="btn" href="#">Revenir dans MiA</a>
+  <p class="small">Si rien ne se passe, touche le bouton. Cette page ne garde rien.</p>
+</main>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var code = q.get("code"), state = q.get("state");
+    var b = document.getElementById("bouton"), t = document.getElementById("texte");
+    if (!code) {
+      t.textContent = "Aucun code n’a été reçu d’OpenRouter. Reviens dans MiA et recommence la connexion.";
+      b.style.display = "none";
+      return;
+    }
+    var cible = "mia://openrouter?code=" + encodeURIComponent(code) + (state ? "&state=" + encodeURIComponent(state) : "");
+    // Chrome Android : un lien intent:// ouvre l'app sans passer par le choix du navigateur.
+    var intent = "intent://openrouter?code=" + encodeURIComponent(code) + (state ? "&state=" + encodeURIComponent(state) : "") +
+      "#Intent;scheme=mia;package=com.lylm83.mia;end";
+    b.href = /Android/i.test(navigator.userAgent) ? intent : cible;
+    setTimeout(function () { location.href = cible; }, 300);
+  })();
+</script>
+</body>
+</html>
